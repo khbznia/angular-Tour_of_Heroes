@@ -1,0 +1,13 @@
+<div *ngIf="messageService.messages.length">
+
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">clear</button>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>
+
+
+
+<!-- https://www.service-public.fr/particuliers/vosdroits/F20706 -->
+<!-- https://www.paris.fr/pages/les-aides-juridiques-gratuites-pres-de-chez-vous-2081  -->
