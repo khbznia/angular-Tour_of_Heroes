@@ -52,6 +52,7 @@
 					<x0:CrowsFootArrow type="CROWS_FOOT_ONE_MANDATORY" stroke="{y:GraphMLReference 3}" scale="1"/>
 				</yjs:PolylineEdgeStyle.sourceArrow>
 			</yjs:PolylineEdgeStyle>
+			<yjs:Stroke x:Key="8" fill="#FF000000"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -61,7 +62,7 @@
 		<node id="n0">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="35" Y="2023.5498046875" Width="94" Height="86"/>
+				<y:RectD X="20.109126984126988" Y="2041.1674194335938" Width="94" Height="86"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -88,7 +89,7 @@
 		<node id="n1">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="52" Y="1720.7998046875" Width="120" Height="86"/>
+				<y:RectD X="37.10912698412699" Y="1738.4174194335938" Width="120" Height="86"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -120,7 +121,7 @@
 		<node id="n2">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="244.125" Y="2036.5498046875" Width="65" Height="60"/>
+				<y:RectD X="229.234126984127" Y="2054.1674194335938" Width="65" Height="60"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -139,12 +140,12 @@
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.1,0.007051120959135915"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.1,0.007051118248735596"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.9,0.007051130780045393"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.9,0.007051128069641284"/>
 				</data>
 			</port>
 			<port name="p2">
@@ -166,7 +167,7 @@
 		<node id="n3">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="392.25" Y="957.48046875" Width="120" Height="60"/>
+				<y:RectD X="378.1404761904762" Y="975.0980834960938" Width="120" Height="60"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -190,24 +191,29 @@
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.8333333333333334,0"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.875,0"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.375,0"/>
 				</data>
 			</port>
 			<port name="p3">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.16666666666666666,0"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.125,0"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.625,0"/>
 				</data>
 			</port>
 		</node>
 		<node id="n4">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="489.25" Y="459.2353515625" Width="122.5" Height="64"/>
+				<y:RectD X="504.140873015873" Y="476.85296630859375" Width="122.5" Height="64"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -243,7 +249,7 @@
 		<node id="n5">
 			<data key="d0">0</data>
 			<data key="d5">
-				<y:RectD X="475.98641497899604" Y="0.0294189453125" Width="149.02717004200792" Height="96.176513671875"/>
+				<y:RectD X="441.75228799486905" Y="-17.61761474609375" Width="149.02717004200792" Height="131.4705810546875"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -255,6 +261,9 @@
 									<sys:String>CleCommande</sys:String>
 									<sys:String>CleLigne</sys:String>
 									<sys:String>CleCompteFacturation</sys:String>
+									<sys:String>MSISDN</sys:String>
+									<sys:String>Etat</sys:String>
+									<sys:String>CleCompteClient</sys:String>
 								</x:Array>
 							</x0:EntityRelationshipModel.attributes>
 						</x0:EntityRelationshipModel>
@@ -263,24 +272,29 @@
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.6250000000000001,1"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.16666666666666666,1"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.12500000000000008,1"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="0.8333333333333334,1"/>
+					<y:FreeNodePortLocationModelParameter Ratio="0.8750000000000003,1"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.3749999999999999,1"/>
 				</data>
 			</port>
 		</node>
 		<node id="n6">
 			<data key="d0">1</data>
 			<data key="d5">
-				<y:RectD X="225.75" Y="1272.7255859375" Width="101.75" Height="146.82421875"/>
+				<y:RectD X="210.859126984127" Y="1290.3432006835938" Width="101.75" Height="146.82421875"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -326,7 +340,7 @@
 		<node id="n7">
 			<data key="d0">2</data>
 			<data key="d5">
-				<y:RectD X="246" Y="1682.5498046875" Width="122.5" Height="162.5"/>
+				<y:RectD X="231.109126984127" Y="1700.1674194335938" Width="122.5" Height="162.5"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -372,7 +386,7 @@
 		<node id="n8">
 			<data key="d0">3</data>
 			<data key="d5">
-				<y:RectD X="235.1561507936508" Y="444.9853515625" Width="165.875" Height="92.5"/>
+				<y:RectD X="220.26527777777778" Y="462.60296630859375" Width="165.875" Height="92.5"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -405,7 +419,7 @@
 		<node id="n9">
 			<data key="d0">4</data>
 			<data key="d5">
-				<y:RectD X="191" Y="920.2353515625" Width="171.25" Height="134.490234375"/>
+				<y:RectD X="176.109126984127" Y="937.8529663085938" Width="171.25" Height="134.490234375"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -440,7 +454,7 @@
 		<node id="n10">
 			<data key="d0">5</data>
 			<data key="d5">
-				<y:RectD X="563.75" Y="942.48046875" Width="170" Height="90"/>
+				<y:RectD X="578.640873015873" Y="960.0980834960938" Width="170" Height="90"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -477,7 +491,7 @@
 		<node id="n11">
 			<data key="d0">6</data>
 			<data key="d5">
-				<y:RectD X="685.7503373403398" Y="440.4559326171875" Width="182.3723411923363" Height="101.558837890625"/>
+				<y:RectD X="700.6412103562128" Y="458.07354736328125" Width="182.3723411923363" Height="101.558837890625"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -510,7 +524,7 @@
 		<node id="n12">
 			<data key="d0">7</data>
 			<data key="d5">
-				<y:RectD X="708.936507936508" Y="0" Width="136" Height="96.2353515625"/>
+				<y:RectD X="723.827380952381" Y="0" Width="136" Height="96.2353515625"/>
 			</data>
 			<data key="d7">
 				<x0:EntityNodeStyle fill="{y:GraphMLReference 1}" insetFill="{y:GraphMLReference 2}" stroke="BLACK">
@@ -556,15 +570,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[CleTiers --- CleTiers]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.418389686221036" Distance="50.254329144355026" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.4183896864089524" Distance="50.25432917339381" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="142,2008.5498046875"/>
-					<y:Bend Location="250.625,2008.5498046875"/>
+					<y:Bend Location="127.10912698412699,2026.1674194335938"/>
+					<y:Bend Location="235.734126984127,2026.1674194335938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -577,15 +591,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[CleTiersTitulaire --- CleTiers]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5243346178258976" Distance="-79.29400011770274" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.5242188731800896" Distance="-79.6992792484006" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="452.25,2009.0498046875"/>
-					<y:Bend Location="302.625,2009.0498046875"/>
+					<y:Bend Location="438.1404761904762,2026.6674194335938"/>
+					<y:Bend Location="287.734126984127,2026.6674194335938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -598,15 +612,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[CleCompteClient --- Cle]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5768315374390879" Distance="-15.967183188350898" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.5710942877927304" Distance="-29.690590415011606" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="519.875,853.7353515625"/>
-					<y:Bend Location="492.25,853.7353515625"/>
+					<y:Bend Location="534.765873015873,871.3529663085938"/>
+					<y:Bend Location="483.1404761904762,871.3529663085938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -619,9 +633,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[CleLigne --- CleLigne]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.3815928178707215" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.3858772583741873" Distance="-18.794636344362647" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="534.894269271124,143.85296630859375"/>
+					<y:Bend Location="565.390873015873,143.85296630859375"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -634,15 +654,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[Cle --- CleCompteClient]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.4661601563555908" Distance="25.972091335785773" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.4654433100054031" Distance="19.92560367091155" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="500.824276652664,111.2059326171875"/>
-					<y:Bend Location="452.25,111.2059326171875"/>
+					<y:Bend Location="460.38068425012005,128.85296630859375"/>
+					<y:Bend Location="423.1404761904762,128.85296630859375"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -662,10 +682,10 @@
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="242.70833333333331,1434.5498046875"/>
-					<y:Bend Location="209,1434.5498046875"/>
-					<y:Bend Location="209,1993.5498046875"/>
-					<y:Bend Location="263.625,1993.5498046875"/>
+					<y:Bend Location="227.8174603174603,1452.1674194335938"/>
+					<y:Bend Location="194.109126984127,1452.1674194335938"/>
+					<y:Bend Location="194.109126984127,2011.1674194335938"/>
+					<y:Bend Location="248.734126984127,2011.1674194335938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -685,8 +705,8 @@
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="337.875,1994.0498046875"/>
-					<y:Bend Location="289.625,1994.0498046875"/>
+					<y:Bend Location="322.984126984127,2011.6674194335938"/>
+					<y:Bend Location="274.734126984127,2011.6674194335938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -706,8 +726,8 @@
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="310.5416666666667,1434.5498046875"/>
-					<y:Bend Location="337.875,1434.5498046875"/>
+					<y:Bend Location="295.6507936507937,1452.1674194335938"/>
+					<y:Bend Location="322.984126984127,1452.1674194335938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -750,15 +770,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[Cle --- Cle]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5561354574827222" Distance="29.531203829731027" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.5574632025334181" Distance="27.19908373110016" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="359.5623015873016,817.2353515625"/>
-					<y:Bend Location="412.25,817.2353515625"/>
+					<y:Bend Location="344.6714285714286,834.8529663085938"/>
+					<y:Bend Location="393.1404761904762,834.8529663085938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -801,7 +821,7 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[CleMoyenPaiement --- CleMoyenpaiement]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.40235827728730733" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.4314569787210858" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
@@ -823,8 +843,8 @@
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="776.936507936508,920.2353515625"/>
-					<y:Bend Location="705.4166666666667,920.2353515625"/>
+					<y:Bend Location="791.827380952381,937.8529663085938"/>
+					<y:Bend Location="720.3075396825398,937.8529663085938"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -837,15 +857,15 @@
 					<y:Label Style="{y:GraphMLReference 5}">
 						<y:Label.Text><![CDATA[tcf.CleFacturation --- tc.CleCompteFacturation]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.4744261240582979" Distance="-25.57138958880865" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.4787686205787749" Distance="-47.96524408991682" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
 						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="600.175723347336,111.2059326171875"/>
-					<y:Bend Location="648.75,111.2059326171875"/>
+					<y:Bend Location="572.151061781626,128.85296630859375"/>
+					<y:Bend Location="663.640873015873,128.85296630859375"/>
 				</x:List>
 			</data>
 			<data key="d13">
@@ -865,12 +885,46 @@
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="581.125,888.2353515625"/>
-					<y:Bend Location="592.0833333333334,888.2353515625"/>
+					<y:Bend Location="596.015873015873,905.8529663085938"/>
+					<y:Bend Location="606.9742063492064,905.8529663085938"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<y:GraphMLReference ResourceKey="6"/>
+			</data>
+		</edge>
+		<edge id="e18" source="n5" target="n3" sourceport="p3" targetport="p4">
+			<data key="d11">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[tc.CleCompteClient --- tcc.Cle]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Ratio="0.46503199648019716" Distance="9.817151337481931" Angle="1.5707963267948966" Model="{y:GraphMLReference 4}"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="BOTTOM" horizontalTextAlignment="CENTER" textFill="BLACK">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="497.637476760622,143.85296630859375"/>
+					<y:Bend Location="467.140873015873,143.85296630859375"/>
+					<y:Bend Location="467.140873015873,802.3529663085938"/>
+					<y:Bend Location="453.1404761904762,802.3529663085938"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 8}">
+					<yjs:PolylineEdgeStyle.sourceArrow>
+						<x0:CrowsFootArrow type="CROWS_FOOT_MANY_MANDATORY" stroke="{y:GraphMLReference 8}" scale="1"/>
+					</yjs:PolylineEdgeStyle.sourceArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 	</graph>
