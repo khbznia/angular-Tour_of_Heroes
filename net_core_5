@@ -11,6 +11,8 @@ https://jasontaylor.dev/building-your-first-web-api-with-asp-net-core-and-visual
 # Use MySql with .Net Core 3.1 & .NET 5 (Last line)
 https://kunwar.dk/posts/use-mysql-for-dot-net-core
 ================================================================================
+https://www.youtube.com/watch?v=S5dzfuh3t8U
+================================================================================
 ???? https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 it seems that EF is used for database first and pushing the changes to the DB.
 
