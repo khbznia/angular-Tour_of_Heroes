@@ -8,10 +8,46 @@ https://softchris.github.io/pages/dotnet-core.html#resources
 # Building Your First Web API with ASP.NET Core and Visual Studio Code
 https://jasontaylor.dev/building-your-first-web-api-with-asp-net-core-and-visual-studio-code/
 ================================================================================
+# Use MySql with .Net Core 3.1 & .NET 5 (Last line)
+https://kunwar.dk/posts/use-mysql-for-dot-net-core
+================================================================================
+???? https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
+it seems that EF is used for database first and pushing the changes to the DB.
+================================================================================
+DB management tools:
+1. MySQL WorkBench
+2. Dbeaver
+3. oracle sql developer for linux
+================================================================================
+REF : https://blog.georgekosmidis.net/2020/07/15/using-mariadb-in-an-aspnet-core-api-with-entity-framework-core/
 
+After we are done with the model, we should create a custom DbContext 
+(let’s name it MariaDbContext) that inherits from Microsoft.EntityFrameworkCore.DbContext 
+and lists our one and only WeatherForecastDataModel:
+######### 
+public partial class MariaDbContext : Microsoft.EntityFrameworkCore.DbContext
+{
+    public MariaDbContext(DbContextOptions<MariaDbContext> options)
+        : base(options)
+    {
+    }
 
+    public virtual DbSet<WeatherForecastDataModel> WeatherForecasts { get; set; }
+}
 
-
+######### Finally, let’s add the MariaDbContext as a scoped service to the DI Container:
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContextPool<MariaDbDbContext>(options => options
+        .UseMySql(
+            Configuration.GetConnectionString("MariaDbConnectionString"),
+            mySqlOptions => mySqlOptions.ServerVersion(new Version(10, 5, 4), ServerType.MariaDb)
+        )
+    );
+    
+    services.AddControllers();
+}
+================================================================================
 
 
 
