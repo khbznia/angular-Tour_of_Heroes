@@ -13,6 +13,8 @@ https://kunwar.dk/posts/use-mysql-for-dot-net-core
 ================================================================================
 ???? https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/
 it seems that EF is used for database first and pushing the changes to the DB.
+
+$ dotnet add package Microsoft.EntityFrameworkCore --version 5.0.5
 ================================================================================
 DB management tools:
 1. MySQL WorkBench
