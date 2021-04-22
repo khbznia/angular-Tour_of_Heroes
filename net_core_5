@@ -56,6 +56,7 @@ public void ConfigureServices(IServiceCollection services)
     services.AddControllers();
 }
 ================================================================================
+https://codewithshadman.com/repository-pattern-csharp/
 
 using System.Data.Entity;
 using System.Linq;
