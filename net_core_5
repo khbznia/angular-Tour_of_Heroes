@@ -170,7 +170,10 @@ public interface IRepository<TEntity> where TEntity :class
 =========================================
 https://www.yworks.com/yed-live/
 =========================================
+To a kill a specific port in Linux use below command
 
+sudo fuser -k Port_Number/tcp
+=========================================
 
 
 
