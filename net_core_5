@@ -176,7 +176,10 @@ sudo fuser -k Port_Number/tcp
 =========================================
 https://www.ezzylearning.net/tutorial/a-step-by-step-guide-to-logging-in-asp-net-core-5
 =========================================
-
+# JWT auth
+https://www.learmoreseekmore.com/2020/08/jwt-authentication-dotenetcore.html
+https://www.learmoreseekmore.com/2020/08/jwt-refreshtoken-auth-dotenetcore.html
+=========================================
 
 
 
